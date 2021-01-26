@@ -53,11 +53,8 @@ body {
 }
 
 .main-page-content-container {
-  /*border: 3px dashed orangered;*/
-
+  border: 3px dashed steelblue;
   flex: auto;
-
-
 }
 
 .page-header {
@@ -70,6 +67,17 @@ body {
   box-sizing: border-box;
 }
 
+.page-content-container {
+  border: 3px dotted deeppink;
+  box-sizing: border-box;
+}
+
+.static-page-content {
+  background-color: aquamarine;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
 
 /* ==========================================================================
    Media Queries for Responsive Design (mobile)
