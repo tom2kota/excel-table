@@ -1,5 +1,4 @@
 html {
-  color: #222;
   font-size: 16px;
   line-height: 1.4;
   width: 100%;
@@ -26,10 +25,8 @@ body {
 
   width: 300px;
 
-
   display: flex;
   flex-direction: row;
-
 }
 
 .left-sidebar {
@@ -58,10 +55,10 @@ body {
 }
 
 .page-header {
-  border: 3px solid midnightblue;
+  border: 3px solid #555555;
   text-align: center;
   text-transform: capitalize;
-  background-color: mediumspringgreen;
+  background-color: rgba(32, 57, 26, 0.4);
   width: 100%;
   height: 100px;
   box-sizing: border-box;
@@ -70,14 +67,62 @@ body {
 .page-content-container {
   border: 3px dotted deeppink;
   box-sizing: border-box;
+  padding: 20px;
+  width: auto;
+  overflow: scroll;
 }
 
 .static-page-content {
-  background-color: aquamarine;
+  background-color: mintcream;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 20px;
 }
+
+.data-table {
+  background-color: azure;
+  max-width: 900px;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  overflow: scroll;
+  box-sizing: border-box;
+}
+
+.data-table table {
+  position: relative;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+}
+
+.data-table td, th {
+  white-space: nowrap;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+.data-table th {
+  background-color: aliceblue;
+  position: sticky;
+  top: -1px;
+  z-index: 2;
+}
+
+.data-table th:first-of-type {
+  left: 0;
+  z-index: 3;
+}
+
+tbody tr td:first-of-type {
+  background-color: aliceblue;
+  position: sticky;
+  left: -1px;
+  text-align: left;
+}
+
 
 /* ==========================================================================
    Media Queries for Responsive Design (mobile)
